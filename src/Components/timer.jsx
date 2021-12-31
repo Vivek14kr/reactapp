@@ -17,6 +17,10 @@ export const Timer = ({ start, end }) => {
         return val + 1;
       });
     }, 1000);
+     return () => {
+     
+      clearInterval(counting);
+    };
   }, []);
 
   return (
